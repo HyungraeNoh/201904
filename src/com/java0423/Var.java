@@ -7,35 +7,41 @@ public class Var {
 	public Var() {
 		var(); // Main에서 기본생성자만 생성하고 바로 출력하게 만들기위해 (var)메소드를 넣는다. (new Var();)
 	} // 기본생성자 return유형이 없고 class와 같은 이름을 갖는다.
-
+	
+	public int state1;
+	protected int state2;
+	int state3;
+	private int state4;
+	
 	// 리턴유형 함수명(매게변수) 로직 구현
 	// void var () {}
-	public void var() {
+	void var() {
 		/***********************************************
 		 * 변수 사용법 
 		 * 1. 변수 선언 
 		 * 2. 변수에 데이터 대입(값 담기) 
 		 * 3. 변수 사용
 		 ***********************************************/
-		int a; // 1
+		/*int a; // 1
 		a = 1; // 2
 		System.out.println(a); // 3
-
 		int b = 2; // 1, 2
 		System.out.println(b); // 3
-
 		int c, d, e; // 1
 		c = a; // 2
 		d = b; // 2
 		e = c + d; // 2
 		System.out.println(e); // 3
-
 		int f;
 		f = a;
 		System.out.println(f);
-
 		a = 10;
 		System.out.println(a);
-		System.out.println(f);
+		System.out.println(f); */
+		
+	}
+	
+	void var2(int a, int b) {
+		System.out.println(a+b);
 	}
 }
