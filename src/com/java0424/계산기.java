@@ -2,8 +2,9 @@ package com.java0424;
 
 public class 계산기 {
 	public void 테스트(int a, int b) {
-		System.out.println("a : " + a + ", b = "+ b);
+		System.out.println("a : " + a + ", b = " + b);
 	}
+
 	public int 덧셈(int a, int b) {
 		return a + b;
 	}
@@ -21,4 +22,5 @@ public class 계산기 {
 		// (float) 명시적 형변환 - 기본자료형 변환
 		return (float) (a * b);
 	}
+
 }
