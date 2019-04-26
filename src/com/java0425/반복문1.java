@@ -92,7 +92,7 @@ public class 반복문1 {
 			}
 		
 			for(int j = 0; j <= t; j++) {
-					if((i-j) % 2 == 0) {
+					if( j % 2 == 0) {
 						System.out.print("★");
 					}
 					else {
@@ -104,25 +104,35 @@ public class 반복문1 {
 		}
 	}
 	public void t8() {
-		int c = 0;
-		for(int i = 0; i<5; i++) {
-			for(int j= 0; j<i; j++) {
-				if(j > 4) {
-					c = c-2;
-				}
-				for(int k = 0; k<=c; k++) {
-					if(k % 2 == 0) {
+		
+		int t = 0;
+		for(int i = 0; i < 9; i++) { // 0,1,2,3,4,3,2,1,0
+			if(i > 4) {
+				t = t - 2;
+			}
+		
+			for(int j = 0; j <= t; j++) {
+					if((t-j) % 2 == 0) {
 						System.out.print("★");
 					}
 					else {
 						System.out.print("☆");
-					}
-				}
-				c++;
-				System.out.println("");
-			}
+					}	
+			}	
+			t++;
+			System.out.println("");
 		}
 		
 	}
 	
+	public void t9() { //구구단 123, 456, 789 순서
+		for(int i = 1; i < 10; i+=3) {
+			System.out.println( i + " 단  \t    "+ (i+1) + " 단  \t    " +(i+2) + " 단  \t    ");
+			for(int j = 1; j < 10; j++) {
+				System.out.println( i + " * "+ j + " = " + (i*j) +"   " + (i+1) + " * "+ j + " = " + ((i+1)*j)+"    " +(i+2) + " * "+ j + " = " + ((i+2)*j));
+			}
+		}
+	}
+	
 }
+	
