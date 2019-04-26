@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class 반복문3 {
 	public void t1() {
-		while(true) {
+		while(true) { //논리형
 			// 문한 루프가 됩니다.
 			System.out.println("무한 루프");
 		}
@@ -26,7 +26,7 @@ public class 반복문3 {
 	
 	public void t3() {
 		int count = 0;
-		while(count < 100) {
+		while(count < 100) { //조건식
 			System.out.println(count);
 			count++;
 		}
