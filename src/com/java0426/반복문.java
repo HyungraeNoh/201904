@@ -1,5 +1,6 @@
 package com.java0426;
 
+import java.util.Scanner;
 public class 반복문 {
 	
 	public void lv1() {
@@ -54,5 +55,63 @@ public class 반복문 {
 			}
 			System.out.println();
 		}
+	}
+	
+	public void lv4() {
+		Scanner scan = new Scanner(System.in);
+		//x축으로 출력나올 갯수를 입력받는다.
+		System.out.println("x축으로 출력나올 갯수를 입력 하세요.");
+		int x축 = scan.nextInt();
+		for(int y = 1; y <= 9; y = y + x축) {
+			for(int x = 1; x <= 9; x++) {
+				for(int 계산 = 0; 계산 < x축; 계산++) { //출력할 갯수를 반복시킨다.
+					System.out.print((y+계산)+" * "+x+" = "+((y+계산)*x)+"\t");
+				}
+				System.out.println();
+			}
+			System.out.println();
+		}
+		
+		scan.close();
+	}
+	
+	public void lv5() {
+		/***********************************************
+		 * x축과 y축의 값을 입력받아 출력하기 단, 9단까지 표현할것
+		 ***********************************************/
+		Scanner scan = new Scanner(System.in);
+		System.out.println("x축으로 출력나올 갯수를 입력 하세요.");
+		int x축 = scan.nextInt();
+		System.out.println("y축으로 출력나올 갯수를 입력 하세요.");
+		int y축 = scan.nextInt();
+		for(int y = 1; y <= (y축*x축); y = y + x축) {
+			for(int x = 1; x <= 9; x++) {
+				for(int 계산 = 0; 계산 < x축; 계산++) { //출력할 갯수를 반복시킨다.
+					if((y+계산) > 9) {
+						break;
+					}
+					System.out.print((y+계산)+" * "+x+" = "+((y+계산)*x)+"\t");
+				}
+				System.out.println();
+			}
+			System.out.println();
+		}
+		scan.close();
+	}
+	
+	public void lv6() {
+		
+		for(int y = 0; y <= 10; y++) {
+			
+			for(int x = 0; x <= 10; x++) {
+				if(x%5 == 0 || y%5 == 0 || y == x || y+x ==10) {
+					System.out.print(" ■ ");
+				}	
+				else {
+					System.out.print(" □ ");
+				}
+			}
+			System.out.println();
+		}	
 	}
 }
