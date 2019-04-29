@@ -9,8 +9,7 @@ public class Main4 {
 //		array.t3(); //수 나열
 //		array.t4(); //요일
 //		array.t5(); //빙고
-//		array.t6(); //달력
-		array.t7();
+		array.t6(); //달력
 	}
 
 }

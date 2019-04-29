@@ -141,40 +141,24 @@ public class 배열 {
 		// 현재 달의 달력 데이터를 요일 배열에 데이터를 담아 보세요.
 		// 출력 오늘 요일을 표현 할것.
 		for(int num = 0; num < 7; num++) {
-			System.out.print(날짜[num] + " ");
+			System.out.print(날짜[num] + "\t");
 		}
 		System.out.println();
-		for(int x = 1; x <= (요일.length+1); x++) {
+		
+		for(int x = 0; x < 31; x++) {
 			
 			for(int y = 1; y < 6; y++) {
-				if(y == 31) {
+				if(y > 31) {
 					break;
 				}
-				
-				System.out.print(요일[x][y]+ " ");
+				else {
+					System.out.print(요일[x][y]+ " \t");
+					continue;
+				}
 			}
 			System.out.println();
 		}
 		
 	}
-	
-	public void t7() {
-		int[] arr1;
-		int arr2[];
-		arr1 = new int[5];
-		int[] arr = new int[5];
-		for(int i = 0; i < arr.length; i++) {
-			System.out.println("arr["+i+"] = "+arr[i]);
-		}
-		arr[0] = 10;
-		arr[1] = 20;
-		arr[2] = 30;
-		for(int i = 0; i < arr.length; i++) {
-			System.out.println("arr["+i+"] = "+arr[i]);
-		}
-		System.out.println("개선된 for 구문 이용 출력");
-		for(int i:arr) {
-			System.out.println(i);
-		}
-	}
+
 }
